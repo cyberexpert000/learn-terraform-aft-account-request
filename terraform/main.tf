@@ -11,7 +11,14 @@ module "sandbox" {
   }
 
   account_tags = {
-    "Learn Tutorial" = "AFT"
+    "ABC:Owner"       = "development.apac+sand@gmail.comm"
+    "ABC:Division"    = "ENT"
+    "ABC:Environment" = "Sandbox"
+    "ABC:CostCenter"  = "123456"
+    "ABC:Vended"      = "true"
+    "ABC:DivCode"     = "102"
+    "ABC:BUCode"      = "ABC003"
+    "ABC:Project"     = "123456"
   }
 
   change_management_parameters = {
