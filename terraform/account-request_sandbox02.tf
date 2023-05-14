@@ -5,7 +5,7 @@ module "sandbox_account_02" {
   source = "./modules/aft-account-request"
 
   control_tower_parameters = {
-    AccountEmail = "development.apac+sand1@gmail.com"
+    AccountEmail = "development.apac+sand02@gmail.com"
     AccountName  = "sandbox-account-02"
     # Syntax for top-level OU
     ManagedOrganizationalUnit = "Sandbox"
