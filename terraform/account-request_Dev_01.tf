@@ -19,7 +19,7 @@ module "Dev_account_01" {
   account_tags = {
     "ABC:Owner"       = "development.apac+dev01@gmail.com"
     "ABC:Division"    = "ENT"
-    "ABC:Environment" = "Dev"
+    "ABC:Environment" = "Development"
     "ABC:CostCenter"  = "123456"
     "ABC:Vended"      = "true"
     "ABC:DivCode"     = "102"
