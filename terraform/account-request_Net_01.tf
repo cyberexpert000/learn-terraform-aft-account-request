@@ -37,5 +37,5 @@ module "net_account_01" {
     custom2 = "b"
   }
 
-  account_customizations_name = "Network Account for TGW"
+  account_customizations_name = "sandbox"
 }
