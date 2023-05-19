@@ -1,25 +1,25 @@
 # Copyright Amazon.com, Inc. or its affiliates. All rights reserved.
 # SPDX-License-Identifier: Apache-2.0
 #
-module "Dev_account_01" {
+module "net_account_01" {
   source = "./modules/aft-account-request"
 
   control_tower_parameters = {
-    AccountEmail = "development.apac+dev01@gmail.com"
-    AccountName  = "Dev-account-01"
+    AccountEmail = "development.apac+net01@gmail.com"
+    AccountName  = "net-account-01"
     # Syntax for top-level OU
-    ManagedOrganizationalUnit = "Development"
+    ManagedOrganizationalUnit = "Network"
     # Syntax for nested OU
     # ManagedOrganizationalUnit = "Sandbox (ou-xfe5-a8hb8ml8)"
-    SSOUserEmail     = "development.apac+dev01@gmail.com"
+    SSOUserEmail     = "development.apac+net01@gmail.com"
     SSOUserFirstName = "Ronaldo"
     SSOUserLastName  = "R"
   }
 
   account_tags = {
-    "ABC:Owner"       = "development.apac+dev01@gmail.com"
+    "ABC:Owner"       = "development.apac+net01@gmail.com"
     "ABC:Division"    = "ENT"
-    "ABC:Environment" = "Development"
+    "ABC:Environment" = "Network OU"
     "ABC:CostCenter"  = "123456"
     "ABC:Vended"      = "true"
     "ABC:DivCode"     = "102"
@@ -37,5 +37,5 @@ module "Dev_account_01" {
     custom2 = "b"
   }
 
-  account_customizations_name = "Development of Mobile apps"
+  account_customizations_name = "Network Account for TGW"
 }
